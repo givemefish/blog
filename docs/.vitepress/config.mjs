@@ -5,6 +5,8 @@ export default defineConfig({
   title: 'JC Notes',
   description: '',
   themeConfig: {
+    base: '/blog/',
+    lang: 'zh-TW',
     logo: '/logo.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -42,6 +44,5 @@ export default defineConfig({
       ]
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/givemefish' }],
-    base: '/blog/',
   }
 })
