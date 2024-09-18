@@ -23,7 +23,7 @@ export default defineConfig({
     },
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright ©陳佳駿",
+      copyright: `Copyright ©陳佳駿 ${new Date().getFullYear()}`,
     },
     search: {
       provider: 'local',
