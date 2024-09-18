@@ -1,9 +1,10 @@
 # 構建 VitePress 網站並將其部署到 GitHub Pages 的示例工作流程
+#
 name: Deploy VitePress site to Pages
 
 on:
-  # 在針對 `main` 分支的推送上運行
-  # 如果是使用 `master` 分支作為預設分支，請將其更改為 `master`
+  # 在針對 `main` 分支的推送上運行。如果你
+  # 使用 `master` 分支作為預設分支，請將其更改為 `master`
   push:
     branches: [main]
 
@@ -30,23 +31,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 如果未啟用 lastUpdated，則不需要
-      - uses: npm/action-setup@v3 # 使用 npm
+          fetch-depth: 0 # 如果未啟用 lastUpdated，則不需要      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm # 緩存設置為 npm          
+          cache: npm 
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: npm install # 使用 npm 安裝依賴
+        run: npm ci 
       - name: Build with VitePress
-        run: npm run build # 使用 npm 運行構建
+        run: npm run docs:build 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist # 打包之後產物的資料夾
+          path: docs/.vitepress/dist
 
   # 部署工作
   deploy:
