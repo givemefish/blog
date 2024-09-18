@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'JC Notes',
   description: '',
+  base: '/blog/',
   themeConfig: {
-    base: '/blog/',
     lang: 'zh-TW',
     logo: '/logo.jpg',
     // https://vitepress.dev/reference/default-theme-config
