@@ -1,21 +1,22 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'JC Notes',
-  description: '',
   base: '/blog/',
   lang: 'zh-TW',
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  title: 'JC Notes',
+  description: '',
+  cleanUrls: true,
   themeConfig: {
     logo: '/logo.jpg',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首頁', link: '/' },
       { text: '程式', link: '/programming' },
-      { text: '書法', link: '/calligraphy' }
+      { text: '書法', link: '/calligraphy' },
     ],
     outline: {
+      level: [2, 6],
       label: '目錄',
     },
     docFooter: {
@@ -35,14 +36,6 @@ export default defineConfig({
         dateStyle: 'full',
         timeStyle: 'medium',
       },
-    },
-    sidebar: {
-      collapsed: true,
-      text: 'TGapi文档',
-      items: [
-        { text: 'TGapi登陆注册', link: '/item-a' },
-        { text: 'Item B', link: '/item-b' },
-      ]
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/givemefish' }],
   }

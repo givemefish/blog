@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {    
+  "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "author": "Chia-Chun Chen",
+  "author": "陳佳駿",
   "license": "ISC",
   "description": "",
   "devDependencies": {
