@@ -5,8 +5,9 @@ export default defineConfig({
   title: 'JC Notes',
   description: '',
   base: '/blog/',
+  lang: 'zh-TW',
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
-    lang: 'zh-TW',
     logo: '/logo.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
