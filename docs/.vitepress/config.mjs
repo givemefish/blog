@@ -31,9 +31,9 @@ export default defineConfig({
       provider: 'local',
     },
     lastUpdated: {
-      text: 'Updated at',
+      text: '更新時間: ',
       formatOptions: {
-        dateStyle: 'full',
+        dateStyle: 'medium',
         timeStyle: 'medium',
       },
     },
