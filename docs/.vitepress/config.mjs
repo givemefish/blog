@@ -6,6 +6,9 @@ export default defineConfig({
   title: 'JC Notes',
   description: '',
   cleanUrls: true,
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     logo: '/logo.jpg',
 
