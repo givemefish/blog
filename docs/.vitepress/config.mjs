@@ -1,13 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/blog/',
+  base: '/note/',
   lang: 'zh-TW',
   title: 'JC Notes',
   description: '',
   cleanUrls: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    image: {
+      lazyLoading: true
+    }
   },
   themeConfig: {
     logo: '/logo.jpg',
